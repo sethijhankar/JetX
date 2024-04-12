@@ -1,0 +1,248 @@
+.footer-bg{
+    background-image: url("./components/heroSection/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero .right span{
+    font-size: 3rem;
+    display: flex;
+    font-weight: bold;
+    line-height: 65px;
+}
+.hero .right-top{
+    display: flex;
+    align-items: center;
+}
+.hero .right-top span{
+    padding: 0 0 0 10px ;
+    font-size: 1.1rem;
+    font-weight: unset;
+}
+.hero .right .line{
+    width: 50px;
+    height: 1px;
+    background-color: black;
+}
+.hero button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+}
+.hero p{
+    padding-top: 30px;
+    max-width: 500px;
+}
+.circle,.circle2,.circle3{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: #e0251f;
+    border-radius: 50%;
+    z-index: -1 ;
+    animation-name:pulse ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    .circle{
+        top: 250px;
+        right: 50px;
+    }
+    
+    .circle2{
+        height: 200px !important;
+        width: 200px !important;
+        top: 50px;
+        right: 380px;
+    }
+    .circle3{
+        height: 200px !important;
+        width: 200px !important;
+        bottom: 50px;
+        left: 380px;
+    }
+    
+
+    @keyframes pulse {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+           transform: translateY(10px);
+        }
+        0%{
+            transform: translateY(0);
+        }
+    }
+
+
+    /* growth */
+.growth{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.growth p{
+    font-size: 1.2rem;
+    padding: 0 0 100px 0;
+    max-width: 600px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+}
+.growth h2{
+    font-size: 2rem;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    color: black;
+}
+.growth1,.growth2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:0 5 0px
+}
+.growth1,.growth2{
+    margin-bottom: 100px;
+}
+.growth1 p,.growth2 p{
+    max-width: 550px;
+    text-align: unset;
+    font-size: 1rem;
+
+}
+.growth1 .left span, .growth2 .right span{
+     color: #e0251f;
+     font-weight: bold;
+     border-bottom: 2px solid #e0251f;
+     font-size: 1.1rem;
+}
+.growth1 .left h3, .growth2 .right h3{
+     font-weight: bold;
+     font-size: 2rem;
+     padding: 10px 0;
+}
+.gr1img{
+    height: 300px;
+    border-radius: 5px;
+    transform: rotate(2deg) translateY(-40px);
+    transition:all 0.3s ease-in-out;
+}
+.gr2img{
+    height: 300px;
+    border-radius: 5px;
+    transform: rotate(-2deg) translateY(-40px);
+    transition:all 0.3s ease-in-out;
+}
+.gr2img:hover,.gr1img:hover{
+    transform: rotate(0deg)translateY(-40px);
+}
+
+/* faq */
+.FAQ{
+    padding: 0px 50px 300px 50px ;
+    position: relative;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.FAQ p{
+    font-size: 1.2rem;
+    padding: 0 0 100px 0;
+    max-width: 600px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+}
+.FAQ h2{
+    font-size: 2rem;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    color: black;
+}
+.MuiAccordionSummary-content {
+    height: 30px;   
+    margin: 10px 0;
+}
+.product-info{
+    padding: 100px 0 500px 0;
+}
+.product{
+    padding: 0px 0 500px 0;
+}
+
+.cart{
+    padding:100px 0 600px 0px;
+}
+.modal{
+    padding: 115px 0;
+}
+.modal::-webkit-scrollbar{
+    display: none;
+}
+.dashboard{
+    padding: 100px 0 500px 0;
+}
+.dashboardtab{
+    padding-top: 50px;
+}
+.button{
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.list{
+    list-style:disc;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.google{
+    background-color: red;
+}
+@media only screen and (max-width: 600px) {
+    .FAQ{
+        padding: 0px 50px 800px 50px ;
+    }
+    .product{
+        padding: 0px 0 800px 0;
+    }
+    .cart{
+        padding:100px 0 1000px 0px;
+    }
+}
